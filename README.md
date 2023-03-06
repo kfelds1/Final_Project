@@ -4,8 +4,8 @@
 Analysis of the college completion rates and efficiency measures for institutions across the United States based on a dataset compiled by Jonathan Ortiz (https://www.kaggle.com/datasets/thedevastator/college-completion-and-efficiency-measures-for-u).
 
 # Softwares
-Quick DBD (https://app.quickdatabasediagrams.com/#/)
-PostgreSQL and pgAdmin 4
+- Quick DBD (https://app.quickdatabasediagrams.com/#/)
+- PostgreSQL and pgAdmin 4
 
 # Analysis
 In order to analyze the HR data, an Employee Database was created based on the entity relationship diagram, shown below. 
