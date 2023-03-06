@@ -79,6 +79,17 @@ The database was created from the following four (4) source csv tables ([archive
   - grad_150_rate - *Percentage of students who graduated within 150 percent of normal/expected time*
 
 - TABLE 3: cc_state_sector_details
+  - stateid - *State FIPS code ('00' for United States)*
+  - state - *State name*
+  - level - *Level of institution (4-year, 2-year)*
+  - control - *Control of institution (Public, Private not-for-profit, Private for-profit)*
+  - counted_pct - *Percentage of students in the entering class (Fall 2007 at 4-year institutions, Fall 2010 at 2-year institutions) who are first-time, full-time,                        degree-seeking students and generally part of the official graduation rate*
+  - awards_per_state_value - *Completions per 100 FTE undergraduate students, state and sector average*
+  - awards_per_natl_value - *Completions per 100 FTE undergraduate students, national sector average*
+  - exp_award_state_value - *Spending per completion, state and sector average*
+  - exp_award_natl_value - *Spending per completion, national sector average*
+  - state_appr_value - *State appropriations to higher education in fiscal year 2011 per resident*
+
 - TABLE 4: cc_state_sector_grads
   - stateid - *State FIPS code ('00' for United States)*
   - state - *State name*
