@@ -33,33 +33,29 @@ In addition to creating a stronger separation between race and ethnicity categor
 
 **_The new race classifications have not been adopted by all institutions—they are given the option to use the old categories, the new categories, or a mixture of the two. Because of that, graduation data specific to race after 2008 may be affected by these differences in classification._**
 
-Importantly, to match previous years, Native Hawaiian or Other Pacific Islander has been combined with Asian. Students reported as being of two or more races, nonresident, or unknown are included in totals but not shown separately.
+**_Importantly, to match previous years, Native Hawaiian or Other Pacific Islander has been combined with Asian. Students reported as being of two or more races, nonresident, or unknown are included in totals but not shown separately._**
 
-At two-year institutions, the number of graduates within 100 percent of normal time is not available before 2009 and is never broken down by race or gender.
+**_At two-year institutions, the number of graduates within 100 percent of normal time is not available before 2009 and is never broken down by race or gender._**
 
 ### Efficiency measures
 
-“Awards per 100 full-time undergraduate students” includes all undergraduate-level completions reported by the institution to the NCES: bachelor’s degrees, associate degrees, and certificate programs of less than four years in length. Full-time-equivalent undergraduates are estimated from the number of credit hours taken at the institution in an academic year. To account for changes in enrollment, the resulting metric is a three-year average of data from 2011, 2012, and 2013.
+**“Awards per 100 full-time undergraduate students”** includes all undergraduate-level completions reported by the institution to the NCES: bachelor’s degrees, associate degrees, and certificate programs of less than four years in length. Full-time-equivalent undergraduates are estimated from the number of credit hours taken at the institution in an academic year. To account for changes in enrollment, the resulting metric is a three-year average of data from 2011, 2012, and 2013.
 
-Expenditure categories are slightly different depending on whether the institution is public, private non-profit, or private for-profit. The spending types considered to be educational in nature, either directly or indirectly, are: instruction, research, public service, student services, academic support, institutional support, operations, and maintenance. Because separate spending figures are not available for only undergraduate students, the measure includes graduate degrees, post-master’s certificates, and all doctorates.
+**Expenditure categories** are slightly different depending on whether the institution is public, private non-profit, or private for-profit. The spending types considered to be educational in nature, either directly or indirectly, are: instruction, research, public service, student services, academic support, institutional support, operations, and maintenance. Because separate spending figures are not available for only undergraduate students, the measure includes graduate degrees, post-master’s certificates, and all doctorates.
 
-In context
+### In context
 
-At four-year institutions, the graduation rates and percent rank shown are only for bachelor’s-degree-seeking students.
+**Graduation rates and percent rank for four-year institutions** are shown are only for bachelor’s-degree-seeking students.
 
-The median estimated SAT score is derived from the 25th and 75th percentile scores for reading and math submitted to the institution by students in the 2013 entering class. For students submitting an ACT score, an approximate equivalent was generated based on a conversion formula for English and mathematics from ACT. The estimate is derived from all submitted tests–in some cases, admitted students submitted both. Score estimates and percent rank within sector are displayed for four-year publics and four-year private nonprofit institutions only, and at least 90 percent of incoming students must have submitted a score for it to be included. 
+**Median estimated SAT score** is derived from the 25th and 75th percentile scores for reading and math submitted to the institution by students in the 2013 entering class. For students submitting an ACT score, an approximate equivalent was generated based on a conversion formula for English and mathematics from ACT. The estimate is derived from all submitted tests–in some cases, admitted students submitted both. Score estimates and percent rank within sector are displayed for four-year publics and four-year private nonprofit institutions only, and at least 90 percent of incoming students must have submitted a score for it to be included. 
 
-Average student aid is equal to the total amount of grants, loans, and scholarships awarded by the institution, divided by the number of recipients in 2013.
+**Average student aid** is equal to the total amount of grants, loans, and scholarships awarded by the institution, divided by the number of recipients in 2013.
 
-Pell Grant percentage corresponds with the total share of undergraduates receiving a Pell Grant.
+**Pell Grant percentage** corresponds with the total share of undergraduates receiving a Pell Grant. The maximum Federal Pell Grant award is $7,395 for the 2023–24 award year (July 1, 2023, to June 30, 2024). Usually, it is awarded only to undergraduate students who display exceptional financial need and have not earned a bachelor's, graduate, or professional degree.
 
-Endowment figures are based on values at the end of 2013 calendar year, divided by the total number of enrolled full-time-equivalent students that year.
+**Endowment figures** are based on values at the end of 2013 calendar year, divided by the total number of enrolled full-time-equivalent students that year.
 
-Full-time faculty members are full-time employees focused on instruction, research, and/or public service, excluding employees who explicitly work for a medical school.
-
-
----
-
+**Full-time faculty members** are full-time employees focused on instruction, research, and/or public service, excluding employees who explicitly work for a medical school.
 
 # Softwares
 - Quick DBD (https://app.quickdatabasediagrams.com/#/)
