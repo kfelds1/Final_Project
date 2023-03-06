@@ -10,7 +10,7 @@ Analysis of the college completion rates and efficiency measures for institution
 # Analysis
 In order to analyze the HR data, an Employee Database was created based on the entity relationship diagram, shown below. 
 
-The Employee database was created from the following four (4) source tables [archive.zip](https://github.com/kfelds1/Final_Project/blob/6b38d0e19ebf20343cb548641279730aa7440c88/archive.zip): 
+The Employee database was created from the following four (4) source tables ([archive.zip](https://github.com/kfelds1/Final_Project/blob/6b38d0e19ebf20343cb548641279730aa7440c88/archive.zip)): 
 - cc_institution_details.csv
 - cc_institution_grads.csv
 - cc_state_sector_details.csv
