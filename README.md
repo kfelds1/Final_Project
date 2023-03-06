@@ -80,5 +80,19 @@ The database was created from the following four (4) source csv tables ([archive
 
 - TABLE 3: cc_state_sector_details
 - TABLE 4: cc_state_sector_grads
+  - stateid - *state FIPS code ('00' for United States)*
+  - state - *state name*
+  - control - *Control of institution (Public, Private not-for-profit, Private for-profit)*
+  - level - *Level of institution (4-year, 2-year)*
+  - year - *Year of data release*
+  - gender - *Gender of students ('B' = both genders; 'M' = male; 'F' = female)*
+  - race - *Race/ethnicity of students ('X' = all students; 'Ai' = American Indian; 'A' = Asian; 'B' = Black; 'H' = Hispanic; 'W' = White)*
+  - cohort - *Degree-seeking cohort type ('4y bach' = Bachelor's/equivalent-seeking cohort at 4-year institutions; '4y other' = Students seeking another type of degree              or certificate at a 4-year institution; '2y all' = Degree-seeking students at 2-year institutions)*
+  - grad_cohort - *Number of first-time, full-time, degree-seeking students in the cohort being tracked, minus any exclusions*
+  - grad_100 - *Number of students who graduated within 100 percent of normal/expected time*
+  - grad_150 - *Number of students who graduated within 150 percent of normal/expected time*
+  - grad_100_rate - *Percentage of students who graduated within 100 percent of normal/expected time*
+  - grad_150_rate - *Percentage of students who graduated within 150 percent of normal/expected time*
+  - grad_cohort_ct - *Number of institutions with data included in the cohort*
 
 The code for creation of the Database can be found here: schema.
