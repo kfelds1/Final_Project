@@ -80,8 +80,8 @@ The database was created from the following four (4) source csv tables ([archive
 
 - TABLE 3: cc_state_sector_details
 - TABLE 4: cc_state_sector_grads
-  - stateid - *state FIPS code ('00' for United States)*
-  - state - *state name*
+  - stateid - *State FIPS code ('00' for United States)*
+  - state - *State name*
   - control - *Control of institution (Public, Private not-for-profit, Private for-profit)*
   - level - *Level of institution (4-year, 2-year)*
   - year - *Year of data release*
