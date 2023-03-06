@@ -5,14 +5,15 @@ Generation of a database to be able to analyse the college completion rates and 
 
 
 # Dataset
-Dataset contains data and trends for 3,800 degree-granting institutions in the United States (excluding territories) that reported a first-time, full-time degree-seeking undergraduate cohort, had a total of at least 100 students at the undergraduate level in 2013, and awarded undergraduate degrees between 2008 and 2013.
+Detailed information about the dataset can be found here: [README](https://github.com/kfelds1/Final_Project/blob/9a4af7b1e13e7d53d938cf0289569e0474e35b69/README.txt)
+
+Briefly, dataset contains data and trends for 3,800 degree-granting institutions in the United States (excluding territories) that reported a first-time, full-time degree-seeking undergraduate cohort, had a total of at least 100 students at the undergraduate level in 2013, and awarded undergraduate degrees between 2008 and 2013.
 
 Graduation rates data were compiled from the National Center for Education Statistics’ Integrated Postsecondary Education Data System (NCES/IPEDS), which is limited to tracking completions for groups of first-time, full-time degree-seeking students at the undergraduate level. The groups examined typically first entered college six years earlier at four-year institutions and three years earlier at two-year institutions. Colleges report how many students completed their programs within 100 percent of normal time and within 150 percent of normal time. For students seeking a bachelor’s degree or equivalent, this corresponds with graduation within four years and six years, respectively.
 
 
 
 
-Graduation rates
 # Softwares
 - Quick DBD (https://app.quickdatabasediagrams.com/#/)
 - PostgreSQL and pgAdmin 4
