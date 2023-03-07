@@ -68,77 +68,75 @@ In addition to creating a stronger separation between race and ethnicity categor
 - Quick DBD (https://app.quickdatabasediagrams.com/#/)
 - PostgreSQL and pgAdmin 4
 
-# Analysis
-In order to analyze the college graduation rate data, Database was created based on the entity relationship diagram, shown below. 
+# Entity Relationship Diagram (EDR)
+In order to create the Database, the EDR was created (below): 
 
-The database was created from the original tables (TABLE 2, TABLE 3, and TABLE 4). For practical reasons, the TABLE 1 was separated into three (3) working tables because the original one containes more than 50 columns.  
+The EDR depicts the relationship among the original tables (TABLE 2, TABLE 3, and TABLE 4). For practical reasons, the TABLE 1 was separated into three (3) working tables because the original one contained more than 50 columns.  
 
-Column titles and their definition for each table in the database are described below:
+**Column titles and their definition for each table are described below:**
+
 - WORKING TABLE 1: cc_institution_details_info
-  - unitid int pk
-  - chronname varchar
-  - city varchar
-  - state varchar
-  - level varchar
-  - control varchar
-  - basic varchar
-  - hbcu varchar
-  - flagship varchar
-  - long_x decimal
-  - lat_y decimal
-  - site varchar 
-  
+  - unitid - *Department of Education Unit ID number*
+  - chronname - *Institution name*
+  - city - *Institution city*
+  - state - *Institution state*
+  - level - *Level of institution (4-year, 2-year)*
+  - control - *Control of institution (Public, Private not-for-profit, Private for-profit)*
+  - basic - *Carnegie Foundation for the Advancement of Teaching Basic Classification (2010 version)*
+  - hbcu - *Denotes Historically Black College and Universities*
+  - flagship - *Denotes Public flagship institutions*
+  - long_x - *Institution longitude*
+  - lat_y - *Institution latitude*
+  - site - *Institution Web site address*
+    
 - WORKING TABLE 2: cc_institution_details_results
-  - unitid int pk
-  - student_count int
-  - awards_per_value decimal
-  - awards_per_state_value decimal
-  - awards_per_natl_value decimal
-  - exp_award_value int
-  - exp_award_state_value int
-  - exp_award_natl_value int
-  - exp_award_percentile int
-  - ft_pct decimal
-  - fte_value int
-  - fte_percentile int
-  - med_sat_value int
-  - med_sat_percentile int
-  - aid_value int
-  - aid_percentile int
-  - endow_value int
-  - endow_percentile int
-  - grad_100_value decimal
-  - grad_100_percentile int
-  - grad_150_value decimal
-  - grad_150_percentile int
-  - pell_value decimal
-  - pell_percentile int
-  - retain_value decimal
-  - retain_percentile int
-  - ft_fac_value decimal
-  - ft_fac_percentile int 
+  - unitid - *Department of Education Unit ID number*
+  - student_count - *Total number of undergraduates in 2010*
+  - awards_per_value - *Completions per 100 FTE undergraduate students (average 2011, 2012, and 2013)*
+  - awards_per_state_value - *Completions per 100 FTE undergraduate students, state and sector average*
+  - awards_per_natl_value - *Completions per 100 FTE undergraduate students, national sector average*
+  - exp_award_value - *Estimated educational spending (expenses related to instruction, research, public service, student services, academic support, institutional                            support, operations and maintenance) per academic award in 2013. Includes all certificates and degrees*
+  - exp_award_state_value - *Spending per completion, state and sector average*
+  - exp_award_natl_value - *Spending per completion, national sector average*
+  - ft_pct - *Percentage of undergraduates who attend full-time*
+  - fte_value - *Total number of full-time equivalent undergraduates*
+  - med_sat_value - *Median estimated SAT value for incoming students*
+  - med_sat_percentile - *Institution's percent rank for median SAT value within sector*
+  - aid_value - *The average amount of student aid going to undergraduate recipients*
+  - aid_percentile - *Institution's percent rank for average amount of student aid going to undergraduate recipients within sector*
+  - endow_value - *End-of-year endowment value per full-time equivalent student*
+  - endow_percentile - *Institution's percent rank for endowment value per full-time equivalent student within sector*
+  - grad_100_value - *Percentage of first-time, full-time, degree-seeking undergraduates who complete a degree or certificate program within 100 percent of expected                           time (bachelor's-seeking group at 4-year institutions)*
+  - grad_100_percentile - *Institution's percent rank for completers within 100 percent of normal time within sector*
+  - grad_150_value - *Percentage of first-time, full-time, degree-seeking undergraduates who complete a degree or certificate program within 150 percent of expected                           time (bachelor's-seeking group at 4-year institutions)*
+  - grad_150_percentile - *Institution's percent rank for completers within 150 percent of normal time within sector*
+  - pell_value - *Percentage of undergraduates receiving a Pell Grant*
+  - pell_percentile - *Institution's percent rank for undergraduate Pell recipients within sector*
+  - retain_value - *Share of freshman students retained for a second year*
+  - retain_percentile - *Institution's percent rank for freshman retention percentage within sector*
+  - ft_fac_value - *Percentage of employees devoted to instruction, research or public service who are full-time and do not work for an associated medical school*
+  - ft_fac_percentile - *Institution's percent rank for full-time faculty share within sector*
   
 - WORKING TABLE 3: cc_institution_details_VSA_results
-  - unitid int pk
-  - vsa_year year
-  - vsa_grad_after4_first decimal
-  - vsa_grad_elsewhere_after4_first decimal
-  - vsa_enroll_after4_first decimal
-  - vsa_enroll_elsewhere_after4_first decimal
-  - vsa_grad_after6_first decimal
-  - vsa_grad_elsewhere_after6_first decimal
-  - vsa_enroll_after6_first decimal
-  - vsa_enroll_elsewhere_after6_first decimal
-  - vsa_grad_after4_transfer decimal
-  - vsa_grad_elsewhere_after4_transfer decimal
-  - vsa_enroll_after4_transfer decimal
-  - vsa_enroll_elsewhere_after4_transfer decimal
-  - vsa_grad_after6_transfer decimal
-  - vsa_grad_elsewhere_after6_transfer decimal
-  - vsa_enroll_after6_transfer decimal
-  - vsa_enroll_elsewhere_after6_transfer decimal
-  - counted_pct decimal 
-
+  - unitid - *Department of Education Unit ID number*
+  - vsa_year - *Most recent year of Student Success and Progress Rate data available from the Voluntary System of Accountability*
+  - vsa_grad_after4_first - *First-time, full-time students who graduated from this institution within four years*
+  - vsa_grad_elsewhere_after4_first - *First-time, full-time students who graduated from another institution within four years*
+  - vsa_enroll_after4_first - *First-time, full-time students who are still enrolled at this institution after four years*
+  - vsa_enroll_elsewhere_after4_first - *First-time, full-time students who are enrolled at another institution after four years*
+  - vsa_grad_after6_first - *First-time, full-time students who graduated from this institution within six years*
+  - vsa_grad_elsewhere_after6_first - *First-time, full-time students who graduated from another institution within six years*
+  - vsa_enroll_after6_first - *First-time, full-time students who are still enrolled at this institution after six years*
+  - vsa_enroll_elsewhere_after6_first - *First-time, full-time students who are enrolled at another institution after six years*
+  - vsa_grad_after4_transfer - *Full-time transfer students who graduated from this institution within four years*
+  - vsa_grad_elsewhere_after4_transfer - *Full-time transfer students who graduated from another institution within four years*
+  - vsa_enroll_after4_transfer - *Full-time transfer students who are still enrolled at this institution after four years*
+  - vsa_enroll_elsewhere_after4_transfer - *Full-time transfer students who are enrolled at another institution after four years*
+  - vsa_grad_after6_transfer - *Full-time transfer students who graduated from this institution within six years*
+  - vsa_grad_elsewhere_after6_transfer - *Full-time transfer students who graduated from another institution within six years*
+  - vsa_enroll_after6_transfer - *Full-time transfer students who are still enrolled at this institution after six years*
+  - vsa_enroll_elsewhere_after6_transfer - *Full-time transfer students who are enrolled at another institution after six years*
+  - counted_pct - *Share entering undergraduate class who were first-time, full-time, degree-seeking students, meaning that they generally would be part of a tracked                      cohort of potential graduates. The entering class of 2007 is displayed for 4-year institutions; 2010 for 2-year institutions.*
 
 - TABLE 2: cc_institution_grads
   - unitid - *Department of Education Unit ID number*
