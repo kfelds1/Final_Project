@@ -70,7 +70,7 @@ In addition to creating a stronger separation between race and ethnicity categor
 # Entity Relationship Diagram (EDR)
 In order to create the Database, first an EDR was created (below): 
 
-The EDR depicts the relationship among the original tables (TABLE 2, TABLE 3, and TABLE 4). For practical reasons, the TABLE 1 was separated into three (3) working tables because the original one contained more than 50 columns.  
+The EDR depicts the relationship among the original tables (TABLE 2, TABLE 3, and TABLE 4) and three (3) working tables ([cc_institution_details_info](https://github.com/kfelds1/Final_Project/blob/49284424baeee5e4f765ddf7ca821353e5ee9499/cc_institution_details_info.csv), . For practical reasons, the TABLE 1 was separated into three (3) working tables because the original one contained more than 50 columns.  
 
 **Column titles and their definition for each table are described below:**
 
