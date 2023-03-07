@@ -12,5 +12,8 @@ This dataset includes significantly less variables than the previous one, with o
 
 3. cc_state_sector_details
 
+This dataset breaks down the institutions in the first dataset on a state level. We have the ability to see which states have the most institutions in this particular survey, the level (2 or 4 year) and type (private or public) of institution, and awards per state.
 
+4. cc_state_sector_grads
 
+This final dataset includes information on the undergraduates in combination with the state data. With this information, we could see if there are trends involving the state in which the institution is located and the graduation rates. Furthermore, we could also explore the types of students and their demographic characteristics against the state that their institution is located.
