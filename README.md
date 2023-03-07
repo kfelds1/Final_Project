@@ -1,12 +1,11 @@
 # Final Project Database
 
 # Objective
-Generation of a database in order to analyse the college completion rates and efficiency measures for institutions across the United States, based on a dataset compiled by Jonathan Ortiz.
+Generation of a database in order to analyse the college completion rates and efficiency measures for institutions across the United States.
 
 
 # Dataset
-Dataset was downloaded from the following website: https://www.kaggle.com/datasets/thedevastator/college-completion-and-efficiency-measures-for-u under the CC0: Public Domain licence. 
-Detailed information about the dataset can be found here: [README](https://github.com/kfelds1/Final_Project/blob/9a4af7b1e13e7d53d938cf0289569e0474e35b69/README.txt).
+Dataset was downloaded from the following website: https://www.kaggle.com/datasets/thedevastator/college-completion-and-efficiency-measures-for-u under the CC0: Public Domain licence. The author of the dataset is Jonathan Ortiz (https://data.world/databeats). Detailed information about the dataset can be found here: [README](https://github.com/kfelds1/Final_Project/blob/9a4af7b1e13e7d53d938cf0289569e0474e35b69/README.txt).
 Dataset contains four (4) csv tables ([archive.zip](https://github.com/kfelds1/Final_Project/blob/6b38d0e19ebf20343cb548641279730aa7440c88/archive.zip)):
 - TABLE 1: cc_institution_details
 - TABLE 2: cc_institution_grads
@@ -69,7 +68,7 @@ In addition to creating a stronger separation between race and ethnicity categor
 - PostgreSQL and pgAdmin 4
 
 # Entity Relationship Diagram (EDR)
-In order to create the Database, the EDR was created (below): 
+In order to create the Database, first an EDR was created (below): 
 
 The EDR depicts the relationship among the original tables (TABLE 2, TABLE 3, and TABLE 4). For practical reasons, the TABLE 1 was separated into three (3) working tables because the original one contained more than 50 columns.  
 
