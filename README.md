@@ -68,7 +68,8 @@ In addition to creating a stronger separation between race and ethnicity categor
 - PostgreSQL and pgAdmin 4
 
 # Entity Relationship Diagram (EDR)
-In order to create the Database, first an EDR was created (below): 
+In order to create the Database, first an EDR was created (below):
+![EDR_schema](https://github.com/kfelds1/Final_Project/blob/2dc20945b28efd13f96c6da29b52945ab117e015/EDR_schema.png)
 
 The EDR depicts the relationship among the original tables (TABLE 2, TABLE 3, and TABLE 4) and three (3) working tables ([cc_institution_details_info](https://github.com/kfelds1/Final_Project/blob/49284424baeee5e4f765ddf7ca821353e5ee9499/cc_institution_details_info.csv), [cc_institution_details_results](https://github.com/kfelds1/Final_Project/blob/e860e9850804efc8326ba488e1bae15bfaacdbde/cc_institution_details_results.csv), and [cc_institution_details_VSA_results](https://github.com/kfelds1/Final_Project/blob/990b7218125bd97fe4123f769472d26fd553db63/cc_institution_details_VSA_results.csv)). For practical reasons, the TABLE 1 was separated into three (3) working tables because the original one contained more than 50 columns.  
 
