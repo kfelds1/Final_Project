@@ -1,11 +1,18 @@
-# Final Project Database Creation
+# Final Project Database
 
 # Objective
-Generation of a database to be able to analyse the college completion rates and efficiency measures for institutions across the United States, based on a dataset compiled by Jonathan Ortiz (https://www.kaggle.com/datasets/thedevastator/college-completion-and-efficiency-measures-for-u).
+Generation of a database in order to analyse the college completion rates and efficiency measures for institutions across the United States, based on a dataset compiled by Jonathan Ortiz.
 
 
 # Dataset
-Detailed information about the dataset can be found here: [README](https://github.com/kfelds1/Final_Project/blob/9a4af7b1e13e7d53d938cf0289569e0474e35b69/README.txt)
+Dataset was downloaded from the following website: https://www.kaggle.com/datasets/thedevastator/college-completion-and-efficiency-measures-for-u under the CC0: Public Domain licence. 
+Detailed information about the dataset can be found here: [README](https://github.com/kfelds1/Final_Project/blob/9a4af7b1e13e7d53d938cf0289569e0474e35b69/README.txt).
+Dataset contains four (4) csv tables ([archive.zip](https://github.com/kfelds1/Final_Project/blob/6b38d0e19ebf20343cb548641279730aa7440c88/archive.zip)):
+- TABLE 1: cc_institution_details
+- TABLE 2: cc_institution_grads
+- TABLE 3: cc_state_sector_details
+- TABLE 4: cc_state_sector_grads
+
 
 ### Source
 Briefly, dataset contains graduation data and trends for 3,800 degree-granting institutions in the United States (excluding territories) that reported a first-time, full-time degree-seeking undergraduate cohort, had a total of at least 100 students at the undergraduate level in 2013, and awarded undergraduate degrees between 2008 and 2013.
@@ -62,10 +69,77 @@ In addition to creating a stronger separation between race and ethnicity categor
 - PostgreSQL and pgAdmin 4
 
 # Analysis
-In order to analyze the college graduation rate data, an Database was created based on the entity relationship diagram, shown below. 
+In order to analyze the college graduation rate data, Database was created based on the entity relationship diagram, shown below. 
 
-The database was created from the following four (4) source csv tables ([archive.zip](https://github.com/kfelds1/Final_Project/blob/6b38d0e19ebf20343cb548641279730aa7440c88/archive.zip)): 
-- TABLE 1: cc_institution_details
+The database was created from the original tables (TABLE 2, TABLE 3, and TABLE 4). For practical reasons, the TABLE 1 was separated into three (3) working tables because the original one containes more than 50 columns.  
+
+Column titles and their definition for each table in the database are described below:
+- WORKING TABLE 1: cc_institution_details_info
+  - unitid int pk
+  - chronname varchar
+  - city varchar
+  - state varchar
+  - level varchar
+  - control varchar
+  - basic varchar
+  - hbcu varchar
+  - flagship varchar
+  - long_x decimal
+  - lat_y decimal
+  - site varchar 
+  
+- WORKING TABLE 2: cc_institution_details_results
+  - unitid int pk
+  - student_count int
+  - awards_per_value decimal
+  - awards_per_state_value decimal
+  - awards_per_natl_value decimal
+  - exp_award_value int
+  - exp_award_state_value int
+  - exp_award_natl_value int
+  - exp_award_percentile int
+  - ft_pct decimal
+  - fte_value int
+  - fte_percentile int
+  - med_sat_value int
+  - med_sat_percentile int
+  - aid_value int
+  - aid_percentile int
+  - endow_value int
+  - endow_percentile int
+  - grad_100_value decimal
+  - grad_100_percentile int
+  - grad_150_value decimal
+  - grad_150_percentile int
+  - pell_value decimal
+  - pell_percentile int
+  - retain_value decimal
+  - retain_percentile int
+  - ft_fac_value decimal
+  - ft_fac_percentile int 
+  
+- WORKING TABLE 3: cc_institution_details_VSA_results
+  - unitid int pk
+  - vsa_year year
+  - vsa_grad_after4_first decimal
+  - vsa_grad_elsewhere_after4_first decimal
+  - vsa_enroll_after4_first decimal
+  - vsa_enroll_elsewhere_after4_first decimal
+  - vsa_grad_after6_first decimal
+  - vsa_grad_elsewhere_after6_first decimal
+  - vsa_enroll_after6_first decimal
+  - vsa_enroll_elsewhere_after6_first decimal
+  - vsa_grad_after4_transfer decimal
+  - vsa_grad_elsewhere_after4_transfer decimal
+  - vsa_enroll_after4_transfer decimal
+  - vsa_enroll_elsewhere_after4_transfer decimal
+  - vsa_grad_after6_transfer decimal
+  - vsa_grad_elsewhere_after6_transfer decimal
+  - vsa_enroll_after6_transfer decimal
+  - vsa_enroll_elsewhere_after6_transfer decimal
+  - counted_pct decimal 
+
+
 - TABLE 2: cc_institution_grads
   - unitid - *Department of Education Unit ID number*
   - year - *Year of data release*
