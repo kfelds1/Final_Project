@@ -1,4 +1,12 @@
+## Topic
 
+The topic our team selected is around college completion and efficiency measures for US institutions. There are several factors that impact a student's ability to complete a college education. These include gender, race, and other external factors that have historically been known to cause inequities among specific groups. By analyzing the data, we will be able to assess the institution's performance and determine how resources, specifically financial aid, may help improve a student's success. Our team selected this topic because we are interested in exploring how motivating factors such as financial aid and early interventions, help provide more access to students in need, and ultimately improve students chances of completing a college education. 
+
+
+Questions were formulated for the machine learning portion of the project. please see the attached AI Questions PDF and Questions. - SMB 03/06/2023
+
+
+----------
 ## Dataset
 
 
@@ -24,16 +32,6 @@ This final dataset includes information on the undergraduates in combination wit
 ## Data Transformation
 
 We plan to focus on the first two datasets, observing each data point organized by institution. We will combine and clean up the datasets to include our desired areas of focus, and load the datasets into SQL to create tables for analysis.
-
-
-The topic our team selected is around college completion and efficiency measures for US institutions. There are several factors that impact a student's ability to complete a college education. These include gender, race, and other external factors that have historically been known to cause inequities among specific groups. By analyzing the data, we will be able to assess the institution's performance and determine how resources, specifically financial aid, may help improve a student's success. Our team selected this topic because we are interested in exploring how motivating factors such as financial aid and early interventions, help provide more access to students in need, and ultimately improve students chances of completing a college education. 
-
-
-Questions were formulated for the machine learning portion of the project. please see the attached AI Questions PDF and Questions. - SMB 03/06/2023
-
-
-----------
-
 # Final Project Database (MSF2141 03/07/2023)
 
 # Objective
