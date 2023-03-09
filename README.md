@@ -194,3 +194,21 @@ The EDR depicts the relationship among the original tables (TABLE 2, TABLE 3, an
 
 # PostgreSQL Database (MSF2141 03/09/2023)
 The PostgreSQL Database was built based on the updated EDR schema from the *Entity Relationship Diagram (EDR)* section. All six (6) tables were created in the database ([final_project_db_all%20six%20tables%20uploaded](https://github.com/kfelds1/Final_Project/blob/3a886af1e04c44cf41ce36dc133291af07dd7b75/final_project_db_all%20six%20tables%20uploaded.sql)) and succesfully imported. In order to confirm that the tables were created a query was run using the SELECT function.  
+
+
+````
+```
+SELECT employees.emp_no,
+       employees.first_name,
+       employees.last_name,
+       titles.title,
+       titles.from_date,
+       titles.to_date
+INTO retirement_titles
+FROM employees
+RIGHT JOIN titles
+ON employees.emp_no = titles.emp_no
+WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+ORDER BY employees.emp_no;
+```
+````
