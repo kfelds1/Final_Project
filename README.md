@@ -83,7 +83,7 @@ In addition to creating a stronger separation between race and ethnicity categor
 
 # Entity Relationship Diagram (EDR)
 In order to create the Database, first an EDR was created ([EDR_schema_code](https://github.com/kfelds1/Final_Project/blob/0a5370eb7fa1ac272d95c3209c5c4d3f24f1b9ce/EDR_schema_code.txt)):
-![EDR_schema](https://github.com/kfelds1/Final_Project/blob/2dc20945b28efd13f96c6da29b52945ab117e015/EDR_schema.png)
+![EDR_schema_updated](https://github.com/kfelds1/Final_Project/blob/c40586404f4cc55db2102bc2d72e2f1997ae0bae/EDR_schema_updated.png)
 
 The EDR depicts the relationship among the original tables (TABLE 2, TABLE 3, and TABLE 4) and three (3) working tables ([cc_institution_details_info](https://github.com/kfelds1/Final_Project/blob/49284424baeee5e4f765ddf7ca821353e5ee9499/cc_institution_details_info.csv), [cc_institution_details_results](https://github.com/kfelds1/Final_Project/blob/e860e9850804efc8326ba488e1bae15bfaacdbde/cc_institution_details_results.csv), and [cc_institution_details_VSA_results](https://github.com/kfelds1/Final_Project/blob/990b7218125bd97fe4123f769472d26fd553db63/cc_institution_details_VSA_results.csv)). For practical reasons, the TABLE 1 was separated into three (3) working tables because the original one contained more than 50 columns.  
 
