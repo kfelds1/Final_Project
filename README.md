@@ -336,7 +336,11 @@ CREATE TABLE cc_state_sector_details(
 All six (6) tables were succesfully imported.
 ![all%20six%20tables%20successful%20upload](https://github.com/kfelds1/Final_Project/blob/a2e5409492fb4112b694bf86c5937b49e57a6a42/all%20six%20tables%20successful%20upload.png)
 
-In order to confirm that the tables were created, a query was run using the SELECT function. first 10 rows are shown for each table below: 
+In order to confirm that the tables were created, a query was run using the SELECT function. first 10 rows are shown for each table below:
+
+- select_cc_institution_grads_db
+![select_cc_institution_grads_db](https://github.com/kfelds1/Final_Project/blob/8c40e1721d12e9bc9608aef7c1ebdad7142059ad/select_cc_institution_grads_db.png)
+
 - select_cc_institution_details_info
 ![select_cc_institution_details_info](https://github.com/kfelds1/Final_Project/blob/920bb68510e207812f71648618f7f246a63d648b/select_cc_institution_details_info.png)
 
@@ -346,11 +350,9 @@ In order to confirm that the tables were created, a query was run using the SELE
 - select_cc_institution_details_VSAresults
 ![select_cc_institution_details_VSAresults](https://github.com/kfelds1/Final_Project/blob/6dfe2d7c387c71fed4559080960da74e3ccab66e/select_cc_institution_details_VSAresults.png)
 
-- select_cc_institution_grads_db
-![select_cc_institution_grads_db](https://github.com/kfelds1/Final_Project/blob/8c40e1721d12e9bc9608aef7c1ebdad7142059ad/select_cc_institution_grads_db.png)
+- select_cc_state_sector_grads
+![select_cc_state_sector_grads](https://github.com/kfelds1/Final_Project/blob/c8a0e7fa7228428beb715f798fb87936bcbb02e9/select_cc_state_sector_grads.png)
 
 - select_cc_state_sector_details
 ![select_cc_state_sector_details](https://github.com/kfelds1/Final_Project/blob/ce4492f3ad3d65e8f2614faa804f85e766b3f068/select_cc_state_sector_details.png)
 
-- select_cc_state_sector_grads
-![select_cc_state_sector_grads](https://github.com/kfelds1/Final_Project/blob/c8a0e7fa7228428beb715f798fb87936bcbb02e9/select_cc_state_sector_grads.png)
