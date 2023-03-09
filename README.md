@@ -193,4 +193,4 @@ The EDR depicts the relationship among the original tables (TABLE 2, TABLE 3, an
   - grad_cohort_ct - *Number of institutions with data included in the cohort*
 
 # PostgreSQL Database (MSF2141 03/09/2023)
-The PostgreSQL Database was built by following the updated EDR schema from the *Entity Relationship Diagram (EDR)* section. All six (6) tables were created in the database (here add sql code) and succesfully imported. In order to confirm that the tables were created a query was run using the SELECT function.  
+The PostgreSQL Database was built based on the updated EDR schema from the *Entity Relationship Diagram (EDR)* section. All six (6) tables were created in the database ([final_project_db_all%20six%20tables%20uploaded](https://github.com/kfelds1/Final_Project/blob/3a886af1e04c44cf41ce36dc133291af07dd7b75/final_project_db_all%20six%20tables%20uploaded.sql)) and succesfully imported. In order to confirm that the tables were created a query was run using the SELECT function.  
