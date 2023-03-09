@@ -193,7 +193,7 @@ The EDR depicts the relationship among the original tables (TABLE 2, TABLE 3, an
   - grad_cohort_ct - *Number of institutions with data included in the cohort*
 
 # PostgreSQL Database (MSF2141 03/09/2023)
-The PostgreSQL Database was built based on the updated EDR schema from the *Entity Relationship Diagram (EDR)* section. All six (6) tables were created in the database ([final_project_db_all%20six%20tables%20uploaded](https://github.com/kfelds1/Final_Project/blob/3a886af1e04c44cf41ce36dc133291af07dd7b75/final_project_db_all%20six%20tables%20uploaded.sql)) 
+The PostgreSQL Database was built based on the updated EDR schema from the *Entity Relationship Diagram (EDR)* section. All six (6) tables were created in the database ([final_project_db_all%20six%20tables%20uploaded](https://github.com/kfelds1/Final_Project/blob/3a886af1e04c44cf41ce36dc133291af07dd7b75/final_project_db_all%20six%20tables%20uploaded.sql)):
 ````
 ```
 CREATE TABLE cc_institution_grads_db (
@@ -336,7 +336,8 @@ CREATE TABLE cc_state_sector_details(
 All six (6) tables were succesfully imported.
 ![all%20six%20tables%20successful%20upload](https://github.com/kfelds1/Final_Project/blob/a2e5409492fb4112b694bf86c5937b49e57a6a42/all%20six%20tables%20successful%20upload.png)
 
-In order to confirm that the tables were created, a query was run using the SELECT function. first 10 rows are shown for each table below:
+In order to confirm that the csv tables were created, a query was run using the SELECT function. 
+Below are shown first 10 rows for each table:
 
 - select_cc_institution_grads_db
 ![select_cc_institution_grads_db](https://github.com/kfelds1/Final_Project/blob/8c40e1721d12e9bc9608aef7c1ebdad7142059ad/select_cc_institution_grads_db.png)
