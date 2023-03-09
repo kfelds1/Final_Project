@@ -342,3 +342,6 @@ In order to confirm that the tables were created, a query was run using the SELE
 
 - select_cc_institution_details_results
 ![select_cc_institution_details_results](https://github.com/kfelds1/Final_Project/blob/0c3745b306e0036543e8d612baf39f74d7e021ac/select_cc_institution_details_results.png)
+
+- select_cc_institution_details_VSAresults
+![select_cc_institution_details_VSAresults](https://github.com/kfelds1/Final_Project/blob/6dfe2d7c387c71fed4559080960da74e3ccab66e/select_cc_institution_details_VSAresults.png)
