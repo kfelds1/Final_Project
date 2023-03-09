@@ -333,7 +333,8 @@ CREATE TABLE cc_state_sector_details(
 ```
 ````
 
-All six (6) tables were succesfully imported.
+All six (6) tables ([six%20tables%20for%20database](https://github.com/kfelds1/Final_Project/blob/5c528e4c7027124aea1c39493a809154d911650d/six%20tables%20for%20database.zip).zip) were succesfully imported.
+
 ![all%20six%20tables%20successful%20upload](https://github.com/kfelds1/Final_Project/blob/a2e5409492fb4112b694bf86c5937b49e57a6a42/all%20six%20tables%20successful%20upload.png)
 
 In order to confirm that the csv tables were created, a query was run using the SELECT function. 
