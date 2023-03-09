@@ -336,4 +336,6 @@ CREATE TABLE cc_state_sector_details(
 All six (6) tables were succesfully imported.
 ![all%20six%20tables%20successful%20upload](https://github.com/kfelds1/Final_Project/blob/a2e5409492fb4112b694bf86c5937b49e57a6a42/all%20six%20tables%20successful%20upload.png)
 
-In order to confirm that the tables were created a query was run using the SELECT function.  
+In order to confirm that the tables were created, a query was run using the SELECT function. first 10 rows are shown for each table below: 
+- select_cc_institution_details_info
+![select_cc_institution_details_info](https://github.com/kfelds1/Final_Project/blob/920bb68510e207812f71648618f7f246a63d648b/select_cc_institution_details_info.png)
