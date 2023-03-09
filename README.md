@@ -339,3 +339,6 @@ All six (6) tables were succesfully imported.
 In order to confirm that the tables were created, a query was run using the SELECT function. first 10 rows are shown for each table below: 
 - select_cc_institution_details_info
 ![select_cc_institution_details_info](https://github.com/kfelds1/Final_Project/blob/920bb68510e207812f71648618f7f246a63d648b/select_cc_institution_details_info.png)
+
+- select_cc_institution_details_results
+![select_cc_institution_details_results](https://github.com/kfelds1/Final_Project/blob/0c3745b306e0036543e8d612baf39f74d7e021ac/select_cc_institution_details_results.png)
