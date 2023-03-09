@@ -192,3 +192,5 @@ The EDR depicts the relationship among the original tables (TABLE 2, TABLE 3, an
   - grad_150_rate - *Percentage of students who graduated within 150 percent of normal/expected time*
   - grad_cohort_ct - *Number of institutions with data included in the cohort*
 
+# PostgreSQL Database (MSF2141 03/09/2023)
+The PostgreSQL Database was built by following the updated EDR schema from the *Entity Relationship Diagram (EDR)* section. All six (6) tables were created in the database (here add sql code) and succesfully imported. In order to confirm that the tables were created a query was run using the SELECT function.  
