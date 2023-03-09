@@ -348,3 +348,6 @@ In order to confirm that the tables were created, a query was run using the SELE
 
 - select_cc_institution_grads_db
 ![select_cc_institution_grads_db](https://github.com/kfelds1/Final_Project/blob/8c40e1721d12e9bc9608aef7c1ebdad7142059ad/select_cc_institution_grads_db.png)
+
+- select_cc_state_sector_details
+![select_cc_state_sector_details](https://github.com/kfelds1/Final_Project/blob/ce4492f3ad3d65e8f2614faa804f85e766b3f068/select_cc_state_sector_details.png)
