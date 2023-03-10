@@ -1,5 +1,10 @@
-## Topic
 
+# Final Project Database (MSF2141 03/07/2023)
+
+## Objective
+Generation of a database in order to analyse the college completion rates and efficiency measures for institutions across the United States.
+
+## Topic (Overview)
 The topic our team selected is around college completion and efficiency measures for US institutions. There are several factors that impact a student's ability to complete a college education. Historically, a student's gender, race, and other external factors have contributed to inequities in the education field. By analyzing the data, we will be able to assess the institution's performance and determine how resources, specifically financial aid, may help improve a student's success. Our team selected this topic because we are interested in exploring how motivating factors such as financial aid and early interventions, help provide more access to students in need, and ultimately improve students chances of completing a college education.  
 
 
@@ -32,10 +37,6 @@ This final dataset includes information on the undergraduates in combination wit
 ## Data Transformation
 
 We plan to focus on the first two datasets, observing each data point organized by institution. We will combine and clean up the datasets to include our desired areas of focus, and load the datasets into SQL to create tables for analysis.
-# Final Project Database (MSF2141 03/07/2023)
-
-# Objective
-Generation of a database in order to analyse the college completion rates and efficiency measures for institutions across the United States.
 
 
 # Dataset
