@@ -102,8 +102,8 @@ In addition to creating a stronger separation between race and ethnicity categor
 - PostgreSQL and pgAdmin 4
 
 # Entity Relationship Diagram (EDR)
-In order to create the Database, first an EDR was created ([EDR_schema_code](https://github.com/kfelds1/Final_Project/blob/0a5370eb7fa1ac272d95c3209c5c4d3f24f1b9ce/EDR_schema_code.txt)):
-![EDR_schema](https://github.com/kfelds1/Final_Project/blob/2dc20945b28efd13f96c6da29b52945ab117e015/EDR_schema.png)
+In order to create the Database, first an EDR was created ([EDR_schema_code_updated](https://github.com/kfelds1/Final_Project/blob/50a6b254c6caab2ac753fc9ced3838e5ace0c33f/EDR_schema_code_updated.txt)):
+![EDR_schema_updated](https://github.com/kfelds1/Final_Project/blob/c40586404f4cc55db2102bc2d72e2f1997ae0bae/EDR_schema_updated.png)
 
 The EDR depicts the relationship among the original tables (TABLE 2, TABLE 3, and TABLE 4) and three (3) working tables ([cc_institution_details_info](https://github.com/kfelds1/Final_Project/blob/49284424baeee5e4f765ddf7ca821353e5ee9499/cc_institution_details_info.csv), [cc_institution_details_results](https://github.com/kfelds1/Final_Project/blob/e860e9850804efc8326ba488e1bae15bfaacdbde/cc_institution_details_results.csv), and [cc_institution_details_VSA_results](https://github.com/kfelds1/Final_Project/blob/990b7218125bd97fe4123f769472d26fd553db63/cc_institution_details_VSA_results.csv)). For practical reasons, the TABLE 1 was separated into three (3) working tables because the original one contained more than 50 columns.  
 
@@ -212,5 +212,175 @@ The EDR depicts the relationship among the original tables (TABLE 2, TABLE 3, an
   - grad_150_rate - *Percentage of students who graduated within 150 percent of normal/expected time*
   - grad_cohort_ct - *Number of institutions with data included in the cohort*
 
+
+# PostgreSQL Database (MSF2141 03/09/2023)
+The PostgreSQL Database was built based on the updated EDR schema from the *Entity Relationship Diagram (EDR)* section. 
+All six (6) tables were created in the database ([final_project_db_all%20six%20tables%20uploaded](https://github.com/kfelds1/Final_Project/blob/3a886af1e04c44cf41ce36dc133291af07dd7b75/final_project_db_all%20six%20tables%20uploaded.sql)):
+````
+```
+CREATE TABLE cc_institution_grads_db (
+	id_number VARCHAR NOT NULL,
+    unitid INT NOT NULL,
+    grads_year int NOT NULL,
+	gender VARCHAR NOT NULL,
+	race varchar NOT NULL,
+	cohort varchar NOT NULL,
+	grad_cohort decimal,
+	grad_100 int,
+	grad_150 int,
+	grad_100_rate decimal,
+	grad_150_rate decimal,
+	PRIMARY KEY (id_number)
+);
+
+
+
+CREATE TABLE cc_institution_details_info (
+	unitid int NOT NULL,
+	chronname varchar NOT NULL,
+	city varchar NOT NULL,
+	grads_state varchar NOT NULL, 
+	grads_level varchar NOT NULL,
+	grads_control varchar NOT NULL,
+	basic varchar NOT NULL,
+	hbcu varchar,
+	flagship varchar,
+	long_x decimal NOT NULL,
+	lat_y decimal NOT NULL,
+	site varchar,
+	PRIMARY KEY (unitid)
+);
+
+
+CREATE TABLE cc_institution_details_results(
+	unitid int NOT NULL,
+	student_count int NOT NULL,
+	awards_per_value decimal NOT NULL,
+	awards_per_state_value decimal NOT NULL,
+	awards_per_natl_value decimal NOT NULL,
+	exp_award_value int NOT NULL,
+	exp_award_state_value int NOT NULL,
+	exp_award_natl_value int NOT NULL,
+	exp_award_percentile int NOT NULL,
+	ft_pct decimal,
+	fte_value int NOT NULL,
+	fte_percentile int NOT NULL,
+	med_sat_value int,
+	med_sat_percentile int,
+	aid_value int,
+	aid_percentile int,
+	endow_value int,
+	endow_percentile int,
+	grad_100_value decimal,
+	grad_100_percentile int,
+	grad_150_value decimal,
+	grad_150_percentile int,
+	pell_value decimal,
+	pell_percentile int,
+	retain_value decimal,
+	retain_percentile int,
+	ft_fac_value decimal,
+	ft_fac_percentile int,
+	FOREIGN KEY (unitid) REFERENCES cc_institution_details_info (unitid),
+	PRIMARY KEY (unitid)
+);
+
+
+CREATE TABLE cc_institution_details_VSA_results(
+	unitid int NOT NULL,
+	vsa_year int,
+	vsa_grad_after4_first decimal, 
+	vsa_grad_elsewhere_after4_first decimal,
+	vsa_enroll_after4_first decimal,
+	vsa_enroll_elsewhere_after4_first decimal,
+	vsa_grad_after6_first decimal,
+	vsa_grad_elsewhere_after6_first decimal,
+	vsa_enroll_after6_first decimal,
+	vsa_enroll_elsewhere_after6_first decimal,
+	vsa_grad_after4_transfer decimal,
+	vsa_grad_elsewhere_after4_transfer decimal,
+	vsa_enroll_after4_transfer decimal,
+	vsa_enroll_elsewhere_after4_transfer decimal,
+	vsa_grad_after6_transfer decimal,
+	vsa_grad_elsewhere_after6_transfer decimal,
+	vsa_enroll_after6_transfer decimal,
+	vsa_enroll_elsewhere_after6_transfer decimal,
+	counted_pct decimal,
+	FOREIGN KEY (unitid) REFERENCES cc_institution_details_info (unitid),
+	PRIMARY KEY (unitid)
+);
+
+
+CREATE TABLE cc_state_sector_grads(
+	id_number_state varchar NOT NULL,
+	stateid int NOT NULL,
+	grads_state varchar NOT NULL,
+	state_abbr varchar NOT NULL,
+	grads_control varchar NOT NULL,
+	grads_level varchar NOT NULL,
+	grads_year int NOT NULL,
+	gender varchar NOT NULL,
+	race varchar NOT NULL,
+	cohort varchar NOT NULL,
+	grad_cohort int NOT NULL,
+	grad_100 int,
+	grad_150 int NOT NULL,
+	grad_100_rate decimal,
+	grad_150_rate decimal,
+	grad_cohort_ct int NOT NULL,
+	PRIMARY KEY (id_number_state)
+);
+
+
+CREATE TABLE cc_state_sector_details(
+	id_number_short varchar NOT NULL,
+	stateid int NOT NULL,
+	grads_state varchar NOT NULL,
+	state_abbr varchar NOT NULL,
+	state_post varchar NOT NULL,
+	grads_level varchar NOT NULL,
+	grads_control varchar NOT NULL,
+	schools_count int NOT NULL,
+	counted_pct decimal,
+	awards_per_state_value decimal,
+	awards_per_natl_value decimal,
+	exp_award_state_value int,
+	exp_award_natl_value int NOT NULL,
+	state_appr_value decimal,
+	state_appr_rank int,
+	grad_rate_rank int,
+	awards_per_rank int,
+	PRIMARY KEY (id_number_short)
+);
+```
+````
+
+All six (6) tables ([six%20tables%20for%20database](https://github.com/kfelds1/Final_Project/blob/5c528e4c7027124aea1c39493a809154d911650d/six%20tables%20for%20database.zip).zip) were succesfully imported.
+
+![all%20six%20tables%20successful%20upload](https://github.com/kfelds1/Final_Project/blob/a2e5409492fb4112b694bf86c5937b49e57a6a42/all%20six%20tables%20successful%20upload.png)
+
+In order to confirm that the csv tables were created, a query was run using the SELECT function. 
+Below are shown first 10 rows for each table:
+
+- select_cc_institution_grads_db
+![select_cc_institution_grads_db](https://github.com/kfelds1/Final_Project/blob/8c40e1721d12e9bc9608aef7c1ebdad7142059ad/select_cc_institution_grads_db.png)
+
+- select_cc_institution_details_info
+![select_cc_institution_details_info](https://github.com/kfelds1/Final_Project/blob/920bb68510e207812f71648618f7f246a63d648b/select_cc_institution_details_info.png)
+
+- select_cc_institution_details_results
+![select_cc_institution_details_results](https://github.com/kfelds1/Final_Project/blob/0c3745b306e0036543e8d612baf39f74d7e021ac/select_cc_institution_details_results.png)
+
+- select_cc_institution_details_VSAresults
+![select_cc_institution_details_VSAresults](https://github.com/kfelds1/Final_Project/blob/6dfe2d7c387c71fed4559080960da74e3ccab66e/select_cc_institution_details_VSAresults.png)
+
+- select_cc_state_sector_grads
+![select_cc_state_sector_grads](https://github.com/kfelds1/Final_Project/blob/c8a0e7fa7228428beb715f798fb87936bcbb02e9/select_cc_state_sector_grads.png)
+
+- select_cc_state_sector_details
+![select_cc_state_sector_details](https://github.com/kfelds1/Final_Project/blob/ce4492f3ad3d65e8f2614faa804f85e766b3f068/select_cc_state_sector_details.png)
+
+=======
 Added AI tools for potential use when we are editing our code. - SMB - 03/09/2023
 Added prior code from challenges for ideas on the next step of coding - SMB - 03/09/2023
+
