@@ -1,5 +1,7 @@
 ## Topic
 
+Presentation: https://docs.google.com/presentation/d/1pvW_HXCCzzGz670NWq3uhhOQxu9bnUuMeJHK5p4Gxxo/edit#slide=id.g21814a6407e_0_84
+
 The topic our team selected is around college completion and efficiency measures for US institutions. There are several factors that impact a student's ability to complete a college education. Historically, a student's gender, race, and other external factors have contributed to inequities in the education field. By analyzing the data, we will be able to assess the institution's performance and determine how resources, specifically financial aid, may help improve a student's success. Our team selected this topic because we are interested in exploring how motivating factors such as financial aid and early interventions, help provide more access to students in need, and ultimately improve students chances of completing a college education.  
 
 
