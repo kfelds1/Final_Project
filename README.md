@@ -384,6 +384,11 @@ Below are shown first 10 rows for each table:
 Added AI tools for potential use when we are editing our code. - SMB - 03/09/2023
 Added prior code from challenges for ideas on the next step of coding - SMB - 03/09/2023
 
-
+=======
 # Exploratory Data Analysis (MSF2141 03/14/2023)
 The exploratory data analysis (EDA) process involved ininital exploration and transformation in order the csv tables could be loaded into the PostgreSQL Database. The oultine of the code is here: [EDA_code](https://github.com/kfelds1/Final_Project/blob/fff879c811d372cebb5a19d45032318e14d7b2b6/EDA_code.txt). It is divided into six (6) sections. Each section is written for one csv table. 
+
+=======
+Added the Machine learning code from the Chapter 20 challenge to facilitate the project. - SMB - 03/14/2023 HAPPY PI DAY!!!
+Updated AI questions and uploaded them for the project. -  SMB - 03/14/2023 
+
