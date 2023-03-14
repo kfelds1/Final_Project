@@ -383,5 +383,9 @@ Below are shown first 10 rows for each table:
 ![select_cc_state_sector_details](https://github.com/kfelds1/Final_Project/blob/ce4492f3ad3d65e8f2614faa804f85e766b3f068/select_cc_state_sector_details.png)
 
 
-======= Added AI tools for potential use when we are editing our code. - SMB - 03/09/2023 Added prior code from challenges for ideas on the next step of coding - SMB - 03/09/2023 Added the Machine learning code from the Chapter 20 challenge to facilitate the project. - SMB - 03/14/2023 HAPPY PI DAY!!! Updated AI questions and uploaded them for the project. - SMB - 03/14/2023
+=======
+Added AI tools for potential use when we are editing our code. - SMB - 03/09/2023
+Added prior code from challenges for ideas on the next step of coding - SMB - 03/09/2023
+Added the Machine learning code from the Chapter 20 challenge to facilitate the project. - SMB - 03/14/2023 HAPPY PI DAY!!!
+Updated AI questions and uploaded them for the project. -  SMB - 03/14/2023 
 
