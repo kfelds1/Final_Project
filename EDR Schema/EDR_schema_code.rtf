@@ -1,130 +1,0 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2639
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-
-\f0\fs24 \cf0 cc_institution_grads_db\
--\
-id_number VARCHAR PK\
-unitid INT\
-grads_year INT\
-gender VARCHAR\
-race VARCHAR\
-cohort VARCHAR\
-grad_cohort VARCHAR\
-grad_100 INT\
-grad_150 INT\
-grad_100_rate DECIMAL\
-grad_150_rate DECIMAL\
-\
-cc_institution_details_info\
--\
-unitid INT PK\
-chronname VARCHAR\
-city VARCHAR\
-grads_state VARCHAR \
-grads_level VARCHAR\
-grads_control VARCHAR\
-basic VARCHAR\
-hbcu VARCHAR\
-flagship VARCHAR\
-long_x DECIMAL\
-lat_y DECIMAL\
-site VARCHAR\
-\
-cc_institution_details_results\
--\
-unitid INT PK FK - cc_institution_details_info.unitid\
-student_count INT\
-awards_per_value DECIMAL\
-awards_per_state_value DECIMAL\
-awards_per_natl_value DECIMAL\
-exp_award_value INT\
-exp_award_state_value INT\
-exp_award_natl_value INT\
-exp_award_percentile INT\
-ft_pct DECIMAL\
-fte_value INT\
-fte_percentile INT\
-med_sat_value INT\
-med_sat_percentile INT\
-aid_value INT,\
-aid_percentile INT\
-endow_value INT\
-endow_percentile INT\
-grad_100_value DECIMAL\
-grad_100_percentile INT\
-grad_150_value DECIMAL\
-grad_150_percentile INT\
-pell_value DECIMAL\
-pell_percentile INT\
-retain_value DECIMAL\
-retain_percentile INT\
-ft_fac_value DECIMAL\
-ft_fac_percentile INT\
-\
-cc_institution_details_VSA_results\
--\
-unitid INT PK FK - cc_institution_details_info.unitid\
-vsa_year INT\
-vsa_grad_after4_first DECIMAL \
-vsa_grad_elsewhere_after4_first DECIMAL\
-vsa_enroll_after4_first DECIMAL\
-vsa_enroll_elsewhere_after4_first DECIMAL\
-vsa_grad_after6_first DECIMAL\
-vsa_grad_elsewhere_after6_first DECIMAL\
-vsa_enroll_after6_first DECIMAL\
-vsa_enroll_elsewhere_after6_first DECIMAL\
-vsa_grad_after4_transfer DECIMAL\
-vsa_grad_elsewhere_after4_transfer DECIMAL\
-vsa_enroll_after4_transfer DECIMAL\
-vsa_enroll_elsewhere_after4_transfer DECIMAL\
-vsa_grad_after6_transfer DECIMAL\
-vsa_grad_elsewhere_after6_transfer DECIMAL\
-vsa_enroll_after6_transfer DECIMAL\
-vsa_enroll_elsewhere_after6_transfer DECIMAL\
-counted_pct DECIMAL\
-\
-cc_state_sector_grads\
--\
-id_number_state VARCHAR PK\
-stateid INT\
-grads_state VARCHAR\
-state_abbr VARCHAR\
-grads_control VARCHAR\
-grads_level VARCHAR\
-grads_year INT\
-gender VARCHAR\
-race VARCHAR\
-cohort VARCHAR\
-grad_cohort INT\
-grad_100 INT\
-grad_150 INT\
-grad_100_rate DECIMAL\
-grad_150_rate DECIMAL\
-grad_cohort_ct INT\
-\
-cc_state_sector_details\
--\
-id_number_short VARCHAR PK\
-stateid INT\
-grads_state VARCHAR\
-state_abbr VARCHAR\
-state_post VARCHAR\
-grads_level VARCHAR\
-grads_control VARCHAR\
-schools_count INT\
-counted_pct DECIMAL\
-awards_per_state_value DECIMAL\
-awards_per_natl_value DECIMAL\
-exp_award_state_value INT\
-exp_award_natl_value INT\
-state_appr_value DECIMAL\
-state_appr_rank INT\
-grad_rate_rank INT\
-awards_per_rank INT\
-\
-\
-}
