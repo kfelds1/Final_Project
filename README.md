@@ -395,3 +395,5 @@ The exploratory data analysis (EDA) process involved ininital exploration and tr
 Added the Machine learning code from the Chapter 20 challenge to facilitate the project. - SMB - 03/14/2023 HAPPY PI DAY!!!
 Updated AI questions and uploaded them for the project. -  SMB - 03/14/2023 
 
+=======
+Added four optimization tests for the AI, can be found in Google collab - SMB - 03/15/2023 
