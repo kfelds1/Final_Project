@@ -397,3 +397,4 @@ Updated AI questions and uploaded them for the project. -  SMB - 03/14/2023
 
 =======
 Added four optimization tests for the AI, can be found in Google collab - SMB - 03/15/2023 
+Added a WHAT IF doc for the presentation on topics we could have explored if we had more time. - SMB - 03/15/2023
