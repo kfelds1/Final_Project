@@ -1,5 +1,7 @@
 ## Topic
 
+Presentation: https://docs.google.com/presentation/d/1pvW_HXCCzzGz670NWq3uhhOQxu9bnUuMeJHK5p4Gxxo/edit#slide=id.g21814a6407e_0_84
+
 The topic our team selected is around college completion and efficiency measures for US institutions. There are several factors that impact a student's ability to complete a college education. Historically, a student's gender, race, and other external factors have contributed to inequities in the education field. By analyzing the data, we will be able to assess the institution's performance and determine how resources, specifically financial aid, may help improve a student's success. Our team selected this topic because we are interested in exploring how motivating factors such as financial aid and early interventions, help provide more access to students in need, and ultimately improve students chances of completing a college education.  
 
 
@@ -380,7 +382,16 @@ Below are shown first 10 rows for each table:
 - select_cc_state_sector_details
 ![select_cc_state_sector_details](https://github.com/kfelds1/Final_Project/blob/ce4492f3ad3d65e8f2614faa804f85e766b3f068/select_cc_state_sector_details.png)
 
+
 =======
 Added AI tools for potential use when we are editing our code. - SMB - 03/09/2023
 Added prior code from challenges for ideas on the next step of coding - SMB - 03/09/2023
+
+=======
+# Exploratory Data Analysis (MSF2141 03/14/2023)
+The exploratory data analysis (EDA) process involved ininital exploration and transformation in order the csv tables could be loaded into the PostgreSQL Database. The oultine of the code is here: [EDA_code](https://github.com/kfelds1/Final_Project/blob/fff879c811d372cebb5a19d45032318e14d7b2b6/EDA_code.txt). It is divided into six (6) sections. Each section is written for one csv table. 
+
+=======
 Added the Machine learning code from the Chapter 20 challenge to facilitate the project. - SMB - 03/14/2023 HAPPY PI DAY!!!
+Updated AI questions and uploaded them for the project. -  SMB - 03/14/2023 
+
