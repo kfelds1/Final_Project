@@ -1,0 +1,254 @@
+# EXPLORATORY DATA ANALYSIS 1
+# CREATING A WORKING TABLE: cc_institution_details_info.csv 
+# FROM THE SOURCE TABLE: cc_institution_details.csv 
+# FOR THE DATABASE
+
+# 1. Import required dependencies
+import pandas as pd
+
+# 2. Create a DataFrame for the cc_institution_details.csv data using the pd.read_csv() and pd.DataFrame() function.
+
+
+# 3. Print first 10 rows of the dataframe using the df.head() function.
+
+
+# 4. Print last 10 rows of the dataframe using the df.tail() function.
+
+
+# 5. Print the full summary using the df.info() function. 
+
+ 
+# 6. Count the sum of all NaN values per each column using the df.isna().sum() function. 
+
+
+# 7. Rename the "state, "level", and "control" columns using the df.rename() function. 
+_df = _df.rename(columns={'state': 'grads_state', 'level': 'grads_level', 'control': 'grads_control'})
+
+# 8. Confirm that selected columns were renamed by printing first 10 rows of the dataframe using the df.head() function.
+
+
+# 9. Drop columns between the 'student_count' and 'cohort_size' columns using the df.loc[] and df.drop() methods.
+_df = _df.drop(df.loc[:, 'student_count':'cohort_size'].columns,axis = 1)
+
+# 10. Confirm that selected columns were dropped by printing first 10 rows of the dataframe using the df.head() function.
+
+
+# 11. Export the Dataframe as a new CSV file uisng the _df.to_csv() function. Export without the index (index=False).
+_df.to_csv("cc_institution_details_info_db.csv", index=False)
+
+# 12. Print the full summary using the df.info() function. 
+
+ 
+# 13. Count the sum of all NaN values per each column using the df.isna().sum() function. 
+
+=======================================================================================================
+# EXPLORATORY DATA ANALYSIS 2
+# CREATING A WORKING TABLE: cc_institution_details_results.csv 
+# FROM THE SOURCE TABLE: cc_institution_details.csv 
+# FOR THE DATABASE
+
+# 1. Import required dependencies
+import pandas as pd
+
+# 2. Create a DataFrame for the cc_institution_details.csv data using the pd.read_csv() and pd.DataFrame() function.
+
+
+# 3. Print first 10 rows of the dataframe using the df.head() function.
+
+
+# 4. Drop columns between the 'chronname' and 'site' columns using the df.loc[] and df.drop() methods.
+_df = _df.drop(df.loc[:, 'chronname':'site'].columns,axis = 1)
+
+# 5. Confirm that selected columns were dropped by printing first 10 rows of the dataframe using the df.head() function.
+
+
+# 6. Drop columns between the 'vsa_year' and 'cohort_size' columns using the df.loc[] and df.drop() methods.
+_df = _df.drop(df.loc[:, 'vsa_year':'cohort_size'].columns,axis = 1)
+
+# 7. Confirm that selected columns were dropped by printing first 10 rows of the dataframe using the df.head() function.
+
+
+# 8. Export the Dataframe as a new CSV file uisng the _df.to_csv() function. Export without the index (index=False).
+_df.to_csv("cc_institution_details_results_db.csv", index=False)
+
+# 9. Print the full summary using the df.info() function. 
+
+ 
+# 10. Count the sum of all NaN values per each column using the df.isna().sum() function. 
+
+========================================================================================================
+# EXPLORATORY DATA ANALYSIS 3
+# CREATING A WORKING TABLE: cc_institution_details_VSA_results.csv 
+# FROM THE SOURCE TABLE: cc_institution_details.csv
+# FOR THE DATABASE 
+
+# 1. Import required dependencies
+import pandas as pd
+
+# 2. Create a DataFrame for the cc_institution_details.csv data using the pd.read_csv() and pd.DataFrame() function.
+
+
+# 3. Print first 10 rows of the dataframe using the df.head() function.
+
+
+# 4. Drop columns between the 'chronname' and 'ft_fac_percentile' columns using the df.loc[] and df.drop() methods.
+_df = _df.drop(df.loc[:, 'chronname':'ft_fac_percentile'].columns,axis = 1)
+
+# 5. Confirm that selected columns were dropped by printing first 10 rows of the dataframe using the df.head() function.
+
+
+# 6. Drop columns between the 'similar' and 'nicknames' columns using the df.loc[] and df.drop() methods.
+_df = _df.drop(df.loc[:, 'similar':'nicknames'].columns,axis = 1)
+
+# 7. Confirm that selected columns were dropped by printing first 10 rows of the dataframe using the df.head() function.
+
+
+# 8. Export the Dataframe as a new CSV file uisng the _df.to_csv() function. Export without the index (index=False).
+_df.to_csv("cc_institution_details_VSA_results_db.csv", index=False)
+
+# 9. Print the full summary using the df.info() function. 
+
+ 
+# 10. Count the sum of all NaN values per each column using the df.isna().sum() function. 
+
+==============================================================================================================
+
+# EXPLORATORY DATA ANALYSIS 4
+# FORMATTING THE SOURCE TABLE: cc_state_sector_details.csv  
+# FOR THE DATABASE
+
+# 1. Import required dependencies
+import pandas as pd
+
+# 2. Create a DataFrame for the cc_state_sector_details.csv data using the pd.read_csv() and pd.DataFrame() function.
+
+
+# 3. Print first 10 rows of the dataframe using the df.head() function.
+
+
+# 4. Print last 10 rows of the dataframe using the df.tail() function.
+
+
+# 5. Print the full summary using the df.info() function. 
+
+ 
+# 6. Count the sum of all NaN values per each column using the df.isna().sum() function. 
+
+
+# 7. Rename the "state", "level", and "control" columns using the df.rename() function. 
+_df = _df.rename(columns={'state': 'grads_state', 'level': 'grads_level', 'control': 'grads_control'})
+
+# 8. Confirm that selected columns were renamed by printing first 10 rows of the dataframe using the df.head() function.
+
+
+# 9. Create a new column "id_number_short" by combining following columns: "state_id", "state_abbr", "grads_control", and "grads_level". Use the + operator.
+_df["id_number_short"] = _df['state_id'].astype(int) +"_"+ _df["state_abbr"].astype(str) +"_"+  _df["grads_control"].astype(str) +"_"+ _df["grads_level"].astype(str)
+
+# 10. Confirm that new column "id_number_short" was created by printing first 10 rows of the dataframe using the df.head() function.
+
+
+# 11. Re-order columns as follows: "index", "id_number_short", "stateid", "grads_state", "state_abbr", "state_post", "grads_level", "grads_control", "schools_count", "counted_pct", 
+# "awards_per_state_value", "awards_per_natl_value", "exp_award_state_value", "exp_award_natl_value", "state_appr_value", "state_appr_rank", "grad_rate_rank", "awards_per_rank".
+_df_clean = _df_clean[['index', 'id_number_short', 'stateid', 'grads_state', 'state_abbr', 'state_post', 'grads_level', 'grads_control', 'schools_count', 'counted_pct', 
+'awards_per_state_value', 'awards_per_natl_value', 'exp_award_state_value', 'exp_award_natl_value', 'state_appr_value', 'state_appr_rank', 'grad_rate_rank', 'awards_per_rank']]
+
+# 12. Confirm that colums were re-ordered by printing first 10 rows of the dataframe using the df.head() function.
+
+
+# 13. Export the Dataframe as a new CSV file using the _df.to_csv() function. Export without the index (index=False).
+_df.to_csv("cc_state_sector_details_db.csv", index=False)
+==========================================================================================================================
+
+# EXPLORATORY DATA ANALYSIS 5
+# FORMATTING THE SOURCE TABLE: cc_state_sector_grads.csv  
+# FOR THE DATABASE
+
+# 1. Import required dependencies
+import pandas as pd
+
+# 2. Create a DataFrame for the cc_state_sector_grads.csv data using the pd.read_csv() and pd.DataFrame() function.
+
+
+# 3. Print first 10 rows of the dataframe using the df.head() function.
+
+
+# 4. Print last 10 rows of the dataframe using the df.tail() function.
+
+
+# 5. Print the full summary using the df.info() function. 
+
+ 
+# 6. Count the sum of all NaN values per each column using the df.isna().sum() function. 
+
+
+# 7. Rename the "state", "control", "level", and "year" columns using the df.rename() function. 
+_df = _df.rename(columns={'state': 'grads_state', 'control': 'grads_control', 'level': 'grads_level', 'year': 'grads_year'})
+
+# 8. Confirm that selected columns were renamed by printing first 10 rows of the dataframe using the df.head() function.
+
+
+# 9. Create a new column "id_number_state" by combining following columns: "state_id", "state_abbr", "grads_control", and "grads_level". Use the + operator.
+_df["id_number_short"] = _df['state_id'].astype(int) +"_"+ _df["state_abbr"].astype(str) +"_"+  _df["grads_control"].astype(str) +"_"+ _df["grads_year"].astype(int) 
++"_"+ _df["gender"].astype(str) +"_"+ _df["race"].astype(str)	+"_"+ _df["cohort"].astype(str)
+
+# 10. Confirm that new column "id_number_state" was created by printing first 10 rows of the dataframe using the df.head() function.
+
+
+# 11. Re-order columns as follows: "index", "id_number_state", "stateid", "grads_state", "state_abbr", "grads_control", "grads_level", "grads_year", "gender", "race", 
+# "cohort", "grad_cohort", "grad_100", "grad_150", "grad_100_rate", "grad_150_rate", "grad_cohort_ct". 
+_df_clean = _df_clean[['index', 'id_number_state', 'stateid', 'grads_state', 'state_abbr', 'grads_control', 'grads_level', 'grads_year', 'gender', 'race', 
+'cohort', 'grad_cohort', 'grad_100', 'grad_150', 'grad_100_rate', 'grad_150_rate', 'grad_cohort_ct']]
+														
+# 12. Confirm that colums were re-ordered by printing first 10 rows of the dataframe using the df.head() function.
+
+
+# 13. Export the Dataframe as a new CSV file using the _df.to_csv() function. Export without the index (index=False).
+_df.to_csv("cc_state_sector_grads_db.csv", index=False)
+
+=============================================================================================================================
+# EXPLORATORY DATA ANALYSIS 6
+# FORMATTING THE SOURCE TABLE: cc_institution_grads.csv  
+# FOR THE DATABASE
+
+# 1. Import required dependencies
+import pandas as pd
+
+# 2. Create a DataFrame for the cc_institution_grads.csv data using the pd.read_csv() and pd.DataFrame() function.
+
+
+# 3. Print first 10 rows of the dataframe using the df.head() function.
+
+
+# 4. Print last 10 rows of the dataframe using the df.tail() function.
+
+
+# 5. Print the full summary using the df.info() function. 
+
+ 
+# 6. Count the sum of all NaN values per each column using the df.isna().sum() function. 
+
+
+# 7. Rename the "year" column using the df.rename() function. 
+_df = _df.rename(columns={'year': 'grads_year'})
+
+# 8. Confirm that selected column was renamed by printing first 10 rows of the dataframe using the df.head() function.
+
+
+# 9. Create a new column "id_number" by combining following columns: "unitid", "grads_year", "gender", "race", and "cohort". Use the + operator.
+_df["id_number"] = _df['unitid'].astype(int) +"_"+ _df["grads_year"].astype(int) +"_"+  _df["gender"].astype(str) +"_"+ _df["race"].astype(int) +"_"+ _df["cohort"].astype(str)
+
+# 10. Confirm that new column "id_number" was created by printing first 10 rows of the dataframe using the df.head() function.
+
+										
+# 11. Re-order columns as follows: "index", "id_number", "unitid", "grads_year", "gender", "race", "cohort", "grad_cohort", "grad_100", "grad_150", 
+# "grad_100_rate", "grad_150_rate". 
+_df_clean = _df_clean[['index', 'id_number', 'unitid', 'grads_year', 'gender', 'race', 'cohort', 'grad_cohort', 'grad_100', 'grad_150', 
+'grad_100_rate', 'grad_150_rate']]
+														
+# 12. Confirm that colums were re-ordered by printing first 10 rows of the dataframe using the df.head() function.
+
+
+# 13. Export the Dataframe as a new CSV file using the _df.to_csv() function. Export without the index (index=False).
+_df.to_csv("cc_institution_grads_db.csv", index=False)
+
+=================================================================================================================================
