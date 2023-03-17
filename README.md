@@ -405,3 +405,6 @@ Data related to the graduation cohort and graduation rate were visualized using 
 
 - Graduation Map for 2013 US institutions:
 ![Graduation%20Rate%20Map%202013](https://github.com/kfelds1/Final_Project/blob/28bd61bdbf5463ce5338161113f52587fe4c2e30/Graduation%20Rate%20Map%202013.png)
+
+- Graduation rate at 150% of expected time reported for each state in 2013:
+![Graduation%20Rate_150pct%20time_by%20State_2013](https://github.com/kfelds1/Final_Project/blob/fc3ecf4be6b923dbfad46aa158e5fb16a041a5f8/Graduation%20Rate_150pct%20time_by%20State_2013.png)
