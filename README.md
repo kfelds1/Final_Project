@@ -392,3 +392,10 @@ The exploratory data analysis (EDA) process involved ininital exploration and tr
 Added the Machine learning code from the Chapter 20 challenge to facilitate the project. - SMB - 03/14/2023 HAPPY PI DAY!!!
 Updated AI questions and uploaded them for the project. -  SMB - 03/14/2023 
 
+=======
+# Visualizations (MSF2141 03/16/2023)
+
+Data related to the graduation cohort and graduation rate were visualized using Tableau. 
+
+- Map of US institutions that were analyzed for year 2013:
+![Map%20of%20US%20Institutions](https://github.com/kfelds1/Final_Project/blob/e4f03899c22123bea5c141045dfee231b56d58b9/Map%20of%20US%20Institutions.png)
