@@ -410,10 +410,13 @@ Data related to the graduation cohort and graduation rate were visualized using 
 - Details are provided for each institute:
 ![/Institution%20Details](https://github.com/kfelds1/Final_Project/blob/25def9dda0178ab8b1b3ee36edc5b7c3f6f482f0/Institution%20Details.png)
 
+- Student cohort in 2013:
+![Graduation%20Cohort_2013](https://github.com/kfelds1/Final_Project/blob/b91fd8aa68f3d1e9969978be649ebb9f99d38fbc/Graduation%20Cohort_2013.png)
+
 - Graduation Map for 2013 US institutions:
 ![Graduation%20Rate%20Map%202013](https://github.com/kfelds1/Final_Project/blob/28bd61bdbf5463ce5338161113f52587fe4c2e30/Graduation%20Rate%20Map%202013.png)
 
-- Graduation rate at 150% of expected time reported for each state in 2013:
+- Graduation rate at 150% of expected time reported for each state and institution type (public, private not-for-profit, or private for-profit) in 2013:
 ![Graduation%20Rate_150pct%20time_by%20State_2013](https://github.com/kfelds1/Final_Project/blob/fc3ecf4be6b923dbfad46aa158e5fb16a041a5f8/Graduation%20Rate_150pct%20time_by%20State_2013.png)
 
 - Graduation rate at 150% of expected time breakdown by gender and race and reported for 2013:
