@@ -399,3 +399,6 @@ Data related to the graduation cohort and graduation rate were visualized using 
 
 - Map of US institutions that were analyzed for year 2013:
 ![Map%20of%20US%20Institutions](https://github.com/kfelds1/Final_Project/blob/e4f03899c22123bea5c141045dfee231b56d58b9/Map%20of%20US%20Institutions.png)
+
+- Details are provided for each institute:
+![/Institution%20Details](https://github.com/kfelds1/Final_Project/blob/25def9dda0178ab8b1b3ee36edc5b7c3f6f482f0/Institution%20Details.png)
