@@ -402,7 +402,7 @@ Added a WHAT IF doc for the presentation on topics we could have explored if we 
 =======
 # Visualizations (MSF2141 03/16/2023)
 
-Data related to the graduation cohort and graduation rate were visualized using Tableau. 
+Data related to the student cohort and their graduation rate were visualized using Tableau. 
 
 - Map of US institutions that were analyzed for year 2013:
 ![Map%20of%20US%20Institutions](https://github.com/kfelds1/Final_Project/blob/e4f03899c22123bea5c141045dfee231b56d58b9/Map%20of%20US%20Institutions.png)
@@ -421,3 +421,6 @@ Data related to the graduation cohort and graduation rate were visualized using 
 
 - Student cohort analyzed for 2013:
 ![Student%20Cohort_2013](https://github.com/kfelds1/Final_Project/blob/3261f16a31412c87173ac3e09b53985fcf164a72/Student%20Cohort_2013.png)
+
+- Analyzed student cohort for 2013 breakdown by gender:
+![Student%20Cohort_by%20Gender_2013](https://github.com/kfelds1/Final_Project/blob/5987712f1cbe41b3dd4be703090f03ac4cd091ff/Student%20Cohort_by%20Gender_2013.png)
