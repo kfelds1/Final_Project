@@ -402,7 +402,8 @@ Added a WHAT IF doc for the presentation on topics we could have explored if we 
 =======
 # Visualizations (MSF2141 03/16/2023)
 
-Data related to the student cohort and graduation rate were visualized using Tableau. 
+
+Data related to the student cohort and their graduation rate were visualized using Tableau. 
 
 - Map of US institutions that were analyzed for year 2013:
 ![Map%20of%20US%20Institutions](https://github.com/kfelds1/Final_Project/blob/e4f03899c22123bea5c141045dfee231b56d58b9/Map%20of%20US%20Institutions.png)
@@ -419,5 +420,15 @@ Data related to the student cohort and graduation rate were visualized using Tab
 - Graduation rate at 150% of expected time breakdown by gender and race and reported for 2013:
 ![Graduation%20Rate_150pct%20time_2013](https://github.com/kfelds1/Final_Project/blob/2b27354171469ea0e637ee6bb098aa9e43917d42/Graduation%20Rate_150pct%20time_2013.png)
 
-- Student cohort in 2013:
-![Graduation%20Cohort_2013](https://github.com/kfelds1/Final_Project/blob/b91fd8aa68f3d1e9969978be649ebb9f99d38fbc/Graduation%20Cohort_2013.png)
+- Student cohort analyzed for 2013:
+![Student%20Cohort_2013](https://github.com/kfelds1/Final_Project/blob/3261f16a31412c87173ac3e09b53985fcf164a72/Student%20Cohort_2013.png)
+
+- Analyzed student cohort for 2013 breakdown by gender:
+![Student%20Cohort_by%20Gender_2013](https://github.com/kfelds1/Final_Project/blob/5987712f1cbe41b3dd4be703090f03ac4cd091ff/Student%20Cohort_by%20Gender_2013.png)
+
+- Analyzed student cohort for 2013 breakdown by race:
+![Student%20Cohort_by%20Race_2013](https://github.com/kfelds1/Final_Project/blob/79e9279c8eba6754294595f7155dff7ee2bf04d3/Student%20Cohort_by%20Race_2013.png)
+
+- Analyzed student cohort for 2013 breakdown by gender and race:
+![Student%20Cohort_by%20G&R_2013](https://github.com/kfelds1/Final_Project/blob/35a2da62d4bc12bc8561b322127a121276e579be/Student%20Cohort_by%20G&R_2013.png)
+
