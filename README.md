@@ -402,16 +402,13 @@ Added a WHAT IF doc for the presentation on topics we could have explored if we 
 =======
 # Visualizations (MSF2141 03/16/2023)
 
-Data related to the graduation cohort and graduation rate were visualized using Tableau. 
+Data related to the student cohort and graduation rate were visualized using Tableau. 
 
 - Map of US institutions that were analyzed for year 2013:
 ![Map%20of%20US%20Institutions](https://github.com/kfelds1/Final_Project/blob/e4f03899c22123bea5c141045dfee231b56d58b9/Map%20of%20US%20Institutions.png)
 
-- Details are provided for each institute:
+- Detail information for each institute are provided once the cursor is hovered on top of the data point:
 ![/Institution%20Details](https://github.com/kfelds1/Final_Project/blob/25def9dda0178ab8b1b3ee36edc5b7c3f6f482f0/Institution%20Details.png)
-
-- Student cohort in 2013:
-![Graduation%20Cohort_2013](https://github.com/kfelds1/Final_Project/blob/b91fd8aa68f3d1e9969978be649ebb9f99d38fbc/Graduation%20Cohort_2013.png)
 
 - Graduation Map for 2013 US institutions:
 ![Graduation%20Rate%20Map%202013](https://github.com/kfelds1/Final_Project/blob/28bd61bdbf5463ce5338161113f52587fe4c2e30/Graduation%20Rate%20Map%202013.png)
@@ -422,3 +419,5 @@ Data related to the graduation cohort and graduation rate were visualized using 
 - Graduation rate at 150% of expected time breakdown by gender and race and reported for 2013:
 ![Graduation%20Rate_150pct%20time_2013](https://github.com/kfelds1/Final_Project/blob/2b27354171469ea0e637ee6bb098aa9e43917d42/Graduation%20Rate_150pct%20time_2013.png)
 
+- Student cohort in 2013:
+![Graduation%20Cohort_2013](https://github.com/kfelds1/Final_Project/blob/b91fd8aa68f3d1e9969978be649ebb9f99d38fbc/Graduation%20Cohort_2013.png)
