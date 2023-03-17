@@ -424,3 +424,6 @@ Data related to the student cohort and their graduation rate were visualized usi
 
 - Analyzed student cohort for 2013 breakdown by gender:
 ![Student%20Cohort_by%20Gender_2013](https://github.com/kfelds1/Final_Project/blob/5987712f1cbe41b3dd4be703090f03ac4cd091ff/Student%20Cohort_by%20Gender_2013.png)
+
+- Analyzed student cohort for 2013 breakdown by race:
+![Student%20Cohort_by%20Race_2013](https://github.com/kfelds1/Final_Project/blob/79e9279c8eba6754294595f7155dff7ee2bf04d3/Student%20Cohort_by%20Race_2013.png)
