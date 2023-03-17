@@ -408,3 +408,6 @@ Data related to the graduation cohort and graduation rate were visualized using 
 
 - Graduation rate at 150% of expected time reported for each state in 2013:
 ![Graduation%20Rate_150pct%20time_by%20State_2013](https://github.com/kfelds1/Final_Project/blob/fc3ecf4be6b923dbfad46aa158e5fb16a041a5f8/Graduation%20Rate_150pct%20time_by%20State_2013.png)
+
+- Graduation rate at 150% of expected time breakdown by gender and race and reported for 2013:
+![Graduation%20Rate_150pct%20time_2013](https://github.com/kfelds1/Final_Project/blob/2b27354171469ea0e637ee6bb098aa9e43917d42/Graduation%20Rate_150pct%20time_2013.png)
