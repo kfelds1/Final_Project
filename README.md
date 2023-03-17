@@ -419,3 +419,5 @@ Data related to the graduation cohort and graduation rate were visualized using 
 - Graduation rate at 150% of expected time breakdown by gender and race and reported for 2013:
 ![Graduation%20Rate_150pct%20time_2013](https://github.com/kfelds1/Final_Project/blob/2b27354171469ea0e637ee6bb098aa9e43917d42/Graduation%20Rate_150pct%20time_2013.png)
 
+- Student cohort analyzed for 2013:
+![Student%20Cohort_2013](https://github.com/kfelds1/Final_Project/blob/3261f16a31412c87173ac3e09b53985fcf164a72/Student%20Cohort_2013.png)
