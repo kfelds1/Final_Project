@@ -403,7 +403,7 @@ Added a WHAT IF doc for the presentation on topics we could have explored if we 
 # Visualizations (MSF2141 03/16/2023)
 
 
-Data related to the student cohort and their graduation rate were visualized using Tableau. 
+First, data related to the student cohort and their graduation rate were analyzed and visualized using Tableau. Then after, figures were organized in dashboards and added to the storyboard. Finally, the storyboard was publised in the Tableau Public: https://public.tableau.com/app/profile/msf2141/viz/USCollegeGraduationRate/USCollegeGraduationRate?publish=yes
 
 - Map of US institutions that were analyzed for year 2013:
 ![Map%20of%20US%20Institutions](https://github.com/kfelds1/Final_Project/blob/e4f03899c22123bea5c141045dfee231b56d58b9/Map%20of%20US%20Institutions.png)
