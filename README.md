@@ -441,6 +441,24 @@ First, data related to the student cohort and their graduation rate were analyze
 - Analyzed student cohort for 2013 breakdown by gender and race:
 ![Student%20Cohort_by%20G&R_2013](https://github.com/kfelds1/Final_Project/blob/35a2da62d4bc12bc8561b322127a121276e579be/Student%20Cohort_by%20G&R_2013.png)
 
+
+============
+
+# Tableau Dashboard Final (MSF2141 03/23/2023)
+
+First, data related to the student cohort and their graduation rate were analyzed and visualized using Tableau. Then after, figures were organized in dashboards and added to the storyboard. Final storyboard was publised in the Tableau Public and can be accessed here: https://public.tableau.com/app/profile/msf2141/viz/USCollegeandUniversityGraduationRate2013/USCollegeUniversityGraduationRate2013
+
+Below are two main dashboards:
+- Interactive Map of graduation rates at US instituations of higher education
+![MAP%20Graduation%20Rate_2013](https://github.com/kfelds1/Final_Project/blob/79a01327013b3d4a62ef7d744a871c6cde986a0b/MAP%20Graduation%20Rate_2013.png)
+It shows the graduation rate for about 3,800 Institutions of Higher Education in US. Each circle represents one institution that is color-coded based on the school type, either Public, Private Nonprofit or Private For-profit. Label displays a summary information for that school, including graduation rate. Institutions can be filtered by a specific range of graduation rate, by degree type, and by school type and can be displayed for a specific state or city. Interesting feature: one can search directly by school name to find out about its graduation rate.
+ 
+- Dashboard of main results
+![Dashboard%20Main%20Results_2013](https://github.com/kfelds1/Final_Project/blob/49c19efd67eaeb0404bbc820de8f06a2f24f0e91/Dashboard%20Main%20Results_2013.png)
+Overall, we found out that average graduation rate in 2013 was 39%. Gender and Race breakdown revealed that the highest graduation rate was achieved by female students of Asian American Descent, followed by female students of White American descent. Us State with the highest graduation rate was Rhode Island (52%). Private Nonprofit Institutions had the highest graduation rate compared to other school types. 4-year degree programs had higher graduation rates than 2-year degree programs.
+
+
+=======
 # Machine Learning
 
 - We ran a linear regression in order to predict the number of students who graduate within the expected time, ‘grad_100_value’, depending on several variables of focus, such as institution type, size, and financial aid given.
@@ -478,4 +496,5 @@ First, data related to the student cohort and their graduation rate were analyze
 	- We found that Asian graduation rates surpassed white graduation rates in 2009/2010 for both genders. How could we explain this?
 	- Moving away from college and university, how could we look at the success of students attending trade schools? On a larger scale, how important is having an actual undergraduate degree when it comes to professional success?
 	- What types of policies could be changed or implemented to create a more equal chance for everyone to graduate college or university within a certain time frame? Consider exploring some policies that already exist, for instance, the Texas Top 10% Rule which states that students who rank in the top 10% of their graduating high school class receive automatic admission to all state-funded universities in Texas
+
 
