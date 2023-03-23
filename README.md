@@ -444,7 +444,7 @@ First, data related to the student cohort and their graduation rate were analyze
 
 ============
 
-Visualizations (MSF2141 03/23/2023)
+# Tableau Dashboard Final (MSF2141 03/23/2023)
 
 First, data related to the student cohort and their graduation rate were analyzed and visualized using Tableau. Then after, figures were organized in dashboards and added to the storyboard. Final storyboard was publised in the Tableau Public and can be accessed here: https://public.tableau.com/app/profile/msf2141/viz/USCollegeandUniversityGraduationRate2013/USCollegeUniversityGraduationRate2013
 
