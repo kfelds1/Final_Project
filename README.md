@@ -389,15 +389,15 @@ Added prior code from challenges for ideas on the next step of coding - SMB - 03
 
 =======
 # Exploratory Data Analysis (MSF2141 03/14/2023)
-The exploratory data analysis (EDA) process involved ininital exploration and transformation in order the csv tables could be loaded into the PostgreSQL Database. The oultine of the code is here: [EDA_code](https://github.com/kfelds1/Final_Project/blob/fff879c811d372cebb5a19d45032318e14d7b2b6/EDA_code.txt). It is divided into six (6) sections. Each section is written for one csv table. 
+The exploratory data analysis (EDA) process involved initial exploration and transformation in order so that the csv tables could be loaded into the PostgreSQL Database. The outline of the code is here: [EDA_code](https://github.com/kfelds1/Final_Project/blob/fff879c811d372cebb5a19d45032318e14d7b2b6/EDA_code.txt). It is divided into six (6) sections. Each section is written for one csv table. 
 
-- Explored data and created Pandas DataFrames
+- Explored and summarized data by creating Pandas DataFrames:
 
 ![df1](Images/dataframe1.png)
 
 ![df1](Images/dataframe2.png)
 
-- Visualized Data using scatterplots and a heatmap
+- Visualized Data using scatterplots and a heatmap:
 
 ![Scatterplot1](Images/MLScatterplot1.png)
 
@@ -406,7 +406,6 @@ The exploratory data analysis (EDA) process involved ininital exploration and tr
 
 
 =======
-Added four optimization tests for the AI, can be found in Google collab - SMB - 03/15/2023 
 Added a WHAT IF doc for the presentation on topics we could have explored if we had more time. - SMB - 03/15/2023
 
 =======
@@ -444,24 +443,24 @@ First, data related to the student cohort and their graduation rate were analyze
 
 # Machine Learning
 
-- We decided to run a linear regression in order to predict the number of students who graduate within the expected time, ‘grad_100_value’, depending on several variables of focus, such as institution type, size, and financial aid given
+- We ran a linear regression in order to predict the number of students who graduate within the expected time, ‘grad_100_value’, depending on several variables of focus, such as institution type, size, and financial aid given.
 
-- We first imported our dataset ‘cc_institution_details’ and dropped several columns that we would not need for our analysis
+- We first imported our dataset ‘cc_institution_details’ and dropped several columns that we would not need for our analysis.
 
-- For those variables that were not in numerical form, we used the ‘get_dummies’ function to create binary variables
+- For those variables that were not in numerical form, we used the ‘get_dummies’ function to create binary variables.
 
-- We then scaled our data to give our data points a value between 0 and 1
+- We then scaled our data to give our data points a value between 0 and 1.
 
 - Finally, we ran our linear regression:
 	- Created x-values by dropping ‘grad_100_value’
 	- Split our data into training and testing data
-	- Fit our linear model with the training data and predict the testing data
+	- Fit our linear model with the training data and predicted the testing data
 	
 - We gathered the following statistics from our testing data:
 
-![Screen Shot 2023-03-20 at 5 07 08 PM](https://user-images.githubusercontent.com/112633146/226491444-63e99558-d930-43ee-bb68-9a35146885d7.png)
+![statistics](Images/statistics_ML.png)
 
-- Considering how high the R^2 value is, we can assume that the linear model fits the data accurately with little variance, meaning its ability to predict the graduation rates given the independent variables is high
+- Considering how high the R^2 value is, we can assume that the linear model fits the data accurately with little variance, meaning its ability to predict the graduation rates given the independent variables is high.
 
 # Conclusions/Findings
 
