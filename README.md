@@ -432,3 +432,12 @@ First, data related to the student cohort and their graduation rate were analyze
 - Analyzed student cohort for 2013 breakdown by gender and race:
 ![Student%20Cohort_by%20G&R_2013](https://github.com/kfelds1/Final_Project/blob/35a2da62d4bc12bc8561b322127a121276e579be/Student%20Cohort_by%20G&R_2013.png)
 
+============
+Visualizations (MSF2141 03/23/2023)
+First, data related to the student cohort and their graduation rate were analyzed and visualized using Tableau. Then after, figures were organized in dashboards and added to the storyboard. Final storyboard was publised in the Tableau Public and can be accessed here: https://public.tableau.com/app/profile/msf2141/viz/USCollegeandUniversityGraduationRate2013/USCollegeUniversityGraduationRate2013
+
+Below are two main dashboards:
+- Interactive Map of graduation rates at US instituations of higher education
+
+- Dashboard of main results
+Map of US institutions that were analyzed for year 2013:
