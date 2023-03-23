@@ -441,6 +441,8 @@ First, data related to the student cohort and their graduation rate were analyze
 Below are two main dashboards:
 - Interactive Map of graduation rates at US instituations of higher education
 ![MAP%20Graduation%20Rate_2013](https://github.com/kfelds1/Final_Project/blob/79a01327013b3d4a62ef7d744a871c6cde986a0b/MAP%20Graduation%20Rate_2013.png)
-
+It shows the graduation rate for about 3,800 Institutions of Higher Education in US. Each circle represents one institution that is color-coded based on the school type, either Public, Private Nonprofit or Private For-profit. Label displays a summary information for that school, including graduation rate. Institutions can be filtered by a specific range of graduation rate, by degree type, and by school type and can be displayed for a specific state or city. Interesting feature: one can search directly by school name to find out about its graduation rate.
+ 
 - Dashboard of main results
 ![Dashboard%20Main%20Results_2013](https://github.com/kfelds1/Final_Project/blob/49c19efd67eaeb0404bbc820de8f06a2f24f0e91/Dashboard%20Main%20Results_2013.png)
+Overall, we found out that average graduation rate in 2013 was 39%. Gender and Race breakdown revealed that the highest graduation rate was achieved by female students of Asian American Descent, followed by female students of White American descent. Us State with the highest graduation rate was Rhode Island (52%). Private Nonprofit Institutions had the highest graduation rate compared to other school types. 4-year degree programs had higher graduation rates than 2-year degree programs.
