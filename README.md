@@ -389,14 +389,23 @@ Added prior code from challenges for ideas on the next step of coding - SMB - 03
 
 =======
 # Exploratory Data Analysis (MSF2141 03/14/2023)
-The exploratory data analysis (EDA) process involved ininital exploration and transformation in order the csv tables could be loaded into the PostgreSQL Database. The oultine of the code is here: [EDA_code](https://github.com/kfelds1/Final_Project/blob/fff879c811d372cebb5a19d45032318e14d7b2b6/EDA_code.txt). It is divided into six (6) sections. Each section is written for one csv table. 
+The exploratory data analysis (EDA) process involved initial exploration and transformation in order so that the csv tables could be loaded into the PostgreSQL Database. The outline of the code is here: [EDA_code](https://github.com/kfelds1/Final_Project/blob/fff879c811d372cebb5a19d45032318e14d7b2b6/EDA_code.txt). It is divided into six (6) sections. Each section is written for one csv table. 
+
+- Explored and summarized data by creating Pandas DataFrames:
+
+![df1](Images/dataframe1.png)
+
+![df1](Images/dataframe2.png)
+
+- Visualized Data using scatterplots and a heatmap:
+
+![Scatterplot1](Images/MLScatterplot1.png)
+
+![Heatmap](Images/HeatmapEDA.png)
+
+
 
 =======
-Added the Machine learning code from the Chapter 20 challenge to facilitate the project. - SMB - 03/14/2023 HAPPY PI DAY!!!
-Updated AI questions and uploaded them for the project. -  SMB - 03/14/2023 
-
-=======
-Added four optimization tests for the AI, can be found in Google collab - SMB - 03/15/2023 
 Added a WHAT IF doc for the presentation on topics we could have explored if we had more time. - SMB - 03/15/2023
 
 =======
@@ -432,6 +441,7 @@ First, data related to the student cohort and their graduation rate were analyze
 - Analyzed student cohort for 2013 breakdown by gender and race:
 ![Student%20Cohort_by%20G&R_2013](https://github.com/kfelds1/Final_Project/blob/35a2da62d4bc12bc8561b322127a121276e579be/Student%20Cohort_by%20G&R_2013.png)
 
+
 ============
 
 Visualizations (MSF2141 03/23/2023)
@@ -446,3 +456,45 @@ It shows the graduation rate for about 3,800 Institutions of Higher Education in
 - Dashboard of main results
 ![Dashboard%20Main%20Results_2013](https://github.com/kfelds1/Final_Project/blob/49c19efd67eaeb0404bbc820de8f06a2f24f0e91/Dashboard%20Main%20Results_2013.png)
 Overall, we found out that average graduation rate in 2013 was 39%. Gender and Race breakdown revealed that the highest graduation rate was achieved by female students of Asian American Descent, followed by female students of White American descent. Us State with the highest graduation rate was Rhode Island (52%). Private Nonprofit Institutions had the highest graduation rate compared to other school types. 4-year degree programs had higher graduation rates than 2-year degree programs.
+
+
+=======
+# Machine Learning
+
+- We ran a linear regression in order to predict the number of students who graduate within the expected time, ‘grad_100_value’, depending on several variables of focus, such as institution type, size, and financial aid given.
+
+- We first imported our dataset ‘cc_institution_details’ and dropped several columns that we would not need for our analysis.
+
+- For those variables that were not in numerical form, we used the ‘get_dummies’ function to create binary variables.
+
+- We then scaled our data to give our data points a value between 0 and 1.
+
+- Finally, we ran our linear regression:
+	- Created x-values by dropping ‘grad_100_value’
+	- Split our data into training and testing data
+	- Fit our linear model with the training data and predicted the testing data
+	
+- We gathered the following statistics from our testing data:
+
+![statistics](Images/statistics_ML.png)
+
+- Considering how high the R^2 value is, we can assume that the linear model fits the data accurately with little variance, meaning its ability to predict the graduation rates given the independent variables is high.
+
+# Conclusions/Findings
+
+- Here are some conclusions we have found to be noteworthy:
+	- SAT Score:
+		- R^2 value is .67 - there is a relatively strong positive correlation between SAT score and graduation rates
+	- Retention Rate:
+		- R^2 value is .44 - there is a moderate positive correlation between the percentage of freshmen who remained at the school for their second year and graduation rates
+	-Average Financial Aid:
+		-R^2 value is .26 - there is a weak positive correlation between the average amount of financial aid a student receives and graduation rates
+- All of these variables had a p-value of less than .001, indicating that these variables have a strong ability to predict graduation rates and that these results are replicable
+
+# What's Next?
+- Given more time, we have thought of a few other ideas and questions/ideas that we could explore:
+	- We found that Asian graduation rates surpassed white graduation rates in 2009/2010 for both genders. How could we explain this?
+	- Moving away from college and university, how could we look at the success of students attending trade schools? On a larger scale, how important is having an actual undergraduate degree when it comes to professional success?
+	- What types of policies could be changed or implemented to create a more equal chance for everyone to graduate college or university within a certain time frame? Consider exploring some policies that already exist, for instance, the Texas Top 10% Rule which states that students who rank in the top 10% of their graduating high school class receive automatic admission to all state-funded universities in Texas
+
+
